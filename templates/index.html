@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Future Assistant</title>
+
+<link rel="stylesheet" href="style.css" />
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<!-- BACKGROUND PARTICLES -->
+<div id="particles-js"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>AI Assistant</h2>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#aivs">AI vs Human</a>
+    <a href="#about">Solution</a>
+    
+    
+    <a href="#demo">Demo</a>
+  </div>
+</nav>
+
+<!-- ⭐ ADD THIS WRAPPER -->
+<div class="page-content">
+
+<!-- HERO -->
+<section id="home" class="section hero">
+<div class="hero-text">
+  <h1>Empowering the Future with AI
+  
+  <p id="hero-description">Smart AI solutions to automate tasks, analyze data,
+and improve human productivity.</p>
+
+    <button onclick="openVoice()" id="but" >Start Now</button></h1>
+   </div>
+
+
+
+  <div class="hero-image">
+ <img src="static/undraw_augmented-reality_3ie0.svg" class="hero-img">
+    </div>
+</section>
+
+
+
+
+
+<!-- HERO -->
+<section id="aivs" class="section">
+  <h2>AI vs Human Intelligence</h2>
+
+<section id="home" class="section hero">
+<div class="hero-text">
+  <h1>
+  <p >AI Innovation</p>
+  <p id="hero-description">AI delivers speed, accuracy, and automation, while humans contribute creativity,
+emotion, and critical thinking. Together, they create smarter and more efficient solutions
+for the future.</p>
+
+    
+   </div>
+
+
+
+  <div class="hero-image">
+ <img src="static\feat\undraw_ai-research-assistant_cxx0.svg" class="hero-img">
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="about" class="section">
+  <h2>AI Powered Solutions</h2>
+
+
+ <div class="features-container">
+
+  <div class="feature-card">
+    <div id="dec">
+    <img src="static\feat\undraw_voice-assistant_k27k.svg" class="feature-icon">
+    <h3 id ="detct"><a href="#demo">AI vs Human Voice</a></h3>
+    </div>
+</div>
+
+    <div class="feature-card">
+    <img src="static\feat\undraw_zoom-in_miok.svg" class="feature-icon">
+    <h3>Image Detection</h3>
+</div>
+
+    <div class="feature-card">
+    <img src="static\feat\undraw_video-games_itxa.svg" class="feature-icon">
+    <h3>Vedio Detection</h3></div>
+
+
+    <div class="feature-card">
+    <img src="static\feat\undraw_medical-research_pze7.svg" class="feature-icon">
+    <h3>Medical Research</h3>
+</div>
+
+
+<div class="feature-card">
+    <img src="static\feat\undraw_large-language-models_m4no.svg" class="feature-icon">
+    <h3>LLM Model</h3>
+</div>
+
+
+<div class="feature-card">
+    <img src="static\feat\undraw_mcp-server_7kvc.svg" class="feature-icon">
+    <h3>Automation</h3>
+</div>
+</div>
+
+</section>
+
+
+
+
+
+<section id="demo" class="section">
+  <h2>Live Demo</h2>
+
+
+
+<!-- ================= VOICE DETECTION SECTION ================= -->
+
+<section id="voice-detection" class="section detector-section">
+
+  <h2 class="detector-title">Live AI Voice Detection</h2>
+  <p class="detector-sub">
+    Upload or record audio to check whether the voice is Human or AI generated.
+  </p>
+
+  <div class="detector-card">
+
+    <!-- Upload -->
+    <input type="file" id="audioFile" accept=".wav,.mp3" />
+
+    <!-- Recording Buttons -->
+    <div class="record-controls">
+      <button id="startBtn">🎙 Start Recording</button>
+      <button id="stopBtn">⏹ Stop</button>
+    </div>
+
+    <!-- Audio Preview -->
+    <audio id="player" controls></audio>
+
+    <!-- Predict -->
+    <button id="predictBtn">Analyze Voice</button>
+
+    <!-- Result -->
+    <div id="result"></div>
+
+  </div>
+
+</section>
+
+<!-- =========================================================== -->
+  
+  
+</section>
+
+<footer>
+  <p>Hackathon Project © 2026</p>
+</footer>
+
+<!-- ================= SCRIPTS (ALWAYS END) ================= -->
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Particles -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- YOUR JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
+
+
